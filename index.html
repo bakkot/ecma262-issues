@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ECMA262 issues</title>
+  <script src="./issues.js"></script>
+  <script src="./renderer.js"></script>
+  <style type="text/css">
+    body {
+      margin: 10px;
+      font-size: 110%;
+      margin-bottom: 30px;
+    }
+
+    .page-header {
+      font-size: 150%;
+      margin: 20px;
+    }
+
+    .table {
+      display: grid;
+      grid-template-columns: 55px 60px 70px 2fr 100px 100px 1fr;
+      grid-gap: 5px;
+      margin-bottom: 20px;
+    }
+
+    .box {
+      background-color: #ddd;
+      border-radius: 5px;
+      padding: 5px;
+      line-height: 1.4;
+    }
+
+    .header {
+      background-color: #bbb;
+    }
+
+    a {
+      color: #0af;
+      text-decoration: none;
+    }
+
+    .done {
+      opacity: 0.5;
+    }
+
+    .sort {
+      margin-left: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-header">Open ECMA262 issues and PRs</div>
+  <div class="table">
+    <div class="box header">✔️ <span class="sort" data-which="done" title="sort">↕</span></div>
+    <div class="box header"># <span class="sort" data-which="number" title="sort">↕</span></div>
+    <div class="box header">Is PR <span class="sort" data-which="pr" title="sort">↕</span></div>
+    <div class="box header">Title <span class="sort" data-which="title" title="sort">↕</span></div>
+    <div class="box header">Kind <span class="sort" data-which="kind" title="sort">↕</span></div>
+    <div class="box header">Status <span class="sort" data-which="status" title="sort">↕</span></div>
+    <div class="box header">Notes <span class="sort" data-which="notes" title="sort">↕</span></div>
+  </div>
+  That's the end!
+</body>
+</html>
